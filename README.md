@@ -32,8 +32,8 @@ curl -v http://$NODE_IP:$NODE_PORT/test-helm
 
 ### Cleaning (Optional)
 ```bash
-helm uninstall demo-helm && \
-eval $(minikube docker-env -u) && \
+helm uninstall demo-helm
+eval $(minikube docker-env -u)
 minikube stop
 ```
 
